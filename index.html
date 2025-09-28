@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./vista/css/styles.css" />
+    <link rel="stylesheet" href="./vista/css/detail.css" />
+    <link rel="stylesheet" href="./vista/css/layout.css">
+    <title>Libris Biblioteca Virtual</title>
+
+</head>
+<header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/images/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../vista/pages/about.html">Sobre Nosotros</a></li>
+                <li><a href="../../vista/pages/data.html">Datos</a></li>
+                <li><a href="../../vista/pages/contacte.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>UN SOFÁ, UN BUEN LIBRO, Y TÚ.</h1>
+                <p>Descubre libros populares y trending de OpenLibrary</p>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar libros..." class="search-input">
+                <button id="searchBtn" class="search-btn">🔍</button>
+            </div>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn" data-category="fiction">Ficción</button>
+            <button class="filter-btn" data-category="science">Ciencia</button>
+            <button class="filter-btn" data-category="history">Historia</button>
+            <button class="filter-btn" data-category="philosophy">Filosofía</button>
+            <button class="filter-btn" data-category="trending">Trending</button>
+        </div>
+
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <div>Cargando biblioteca...</div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="booksGrid" class="books-grid"></div>
+        </div>
+
+        <!-- Modal  -->
+        <div id="bookModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body" id="modalBody">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Libris - Bookstore</h3>
+                    <p>Brasil 10</p>
+                    <p>+53 123-456-789</p>
+                    <p>info@libris.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Tienda</h3>
+                    <a href="#faq">FAQ</a>
+                    <a href="./vista/pages/politics.html">Envío y devoluciones</a>
+                    <a href="./vista/pages/politics.html">Políticas de la tienda</a>
+
+                </div>
+
+                <div class="footer-section">
+                    <h3>Sociales</h3>
+                    <a href="#facebook">Facebook</a>
+                    <a href="#twitter">Twitter</a>
+                    <a href="#instagram">Instagram</a>
+
+                </div>
+
+                <div class="footer-section">
+                    <h3>Entérate lo primero</h3>
+                    <p>Suscríbete a nuestro boletín</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Ingresa tu email aquí">
+                        <button onclick="subscribe()">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-credits">
+        <p>2025. Desarrollado por
+            <a href="https://www.linkedin.com/in/ana-lucia-silva-cordoba" target="_blank" rel="noopener noreferrer">
+                Ana Lucía Silva Córdoba
+            </a>
+        </p>
+        <p>Este sitio web no usa ninguna cookie y no recoge ningún tipo de dato.</p>
+    </footer>
+
+    <script src="./controller/layout.js"></script>
+    <script src="./model/data.js"></script>
+    <script src="./model/model.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.chart-card, .controls {
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.chart-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-dark), var(----primary-green));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.chart-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.chart-container {
+  height: 350px;
+}
+
+.controls h3 { margin: 0 0 12px; }
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg,  var(--primary-dark), var(--primary-green));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+.search-btn:hover { transform: scale(1.05); }
+
+.info-panel {
+  background: var(--light);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: .9rem;
+  color: var(--primary-green);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.stat-item {
+  background: linear-gradient(135deg,  var(--primary-dark), var(--primary-green));
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+.stat-number { font-size: 1.6em; font-weight: bold; }
+.stat-label { font-size: .85em; opacity: .9; }

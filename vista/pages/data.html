@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Datos - Open Library API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="../css/data.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script type="module" src="../../controller/data.js"></script>
+    <script type="module" src="../../controller/layout.js"></script>
+
+
+</head>
+
+<body>
+    <main>
+        <div id="header-placeholder"></div>
+        <div class="container">
+            <div class="header">
+                <h1>Datos Open Library</h1>
+                <p>Visualización interactiva de datos de libros y autores</p>
+            </div>
+
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="searchInput"
+                        placeholder="Buscar libros (ej: Harry Potter, JavaScript, Python)">
+                    <button class="search-btn" onclick="searchBooks()">🔍</button>
+                </div>
+                <div class="info-panel"> Busca cualquier tema o título de libro para generar gráficos automáticamente
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="yearChart"></canvas>
+                    </div>
+                    <div id="yearLoading" class="loading">Cargando datos...</div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="authorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid" id="statsGrid" style="display: none;">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalBooks">0</div>
+                    <div class="stat-label">Libros Encontrados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalAuthors">0</div>
+                    <div class="stat-label">Autores Únicos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="avgYear">0</div>
+                    <div class="stat-label">Año Promedio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="oldestBook">0</div>
+                    <div class="stat-label">Libro Más Antiguo</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-placeholder"></div>
+    </main>
+</body>
+
+</html>

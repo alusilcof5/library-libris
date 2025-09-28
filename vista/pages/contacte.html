@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Libris Biblioteca Virtual</title>
+    <link rel="stylesheet" href="../css/contacte.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="../../controller/contacte.js"></script>
+    <script type="module" src="../../controller/layout.js"></script>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="contacte-container">
+            <div class="header">
+                <h1>Contacto</h1>
+                <p>Estamos aquí para ayudarte. Envíanos tu mensaje y te responderemos pronto.</p>
+            </div>
+            <div class="form-response" id="formResponse"></div>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                    <button type="button" class="cancel-btn" onclick="cancelForm()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
