@@ -159,12 +159,16 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.closeModal()?.addEventListener('click', () => modalToggle(false));
     window.addEventListener('click', (e) => e.target === elements.modal() && modalToggle(false));
     document.addEventListener('keydown', (e) => e.key === 'Escape' && modalToggle(false));
+
     elements.filterBtns().forEach(btn => btn.addEventListener('click', () => {
         const category = btn.dataset.category;
         setActiveFilter(category);
         loadBooks(() => (category === 'trending' ? getTrendingBooks() : getBooksBySubject(category)), category);
     }));
+
     elements.searchBtn()?.addEventListener('click', handleSearch);
     elements.searchInput()?.addEventListener('keypress', (e) => e.key === 'Enter' && handleSearch());
-    loadBooks(getTrendingBooks, 'trending');
+
+    // Cambiar vista inicial a libros de Ciencia
+    loadBooks(() => getBooksBySubject('science'), 'science');
 });
