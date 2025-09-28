@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/images/logo.png" alt="Libris Logo" width="250px">
+  <img src="./assets/images/cap.png" alt="Libris Logo" width="250px">
 </p>
 
 # Libris — Virtual Library
