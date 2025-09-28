@@ -51,14 +51,14 @@ Key value propositions:
 🔗 [Live Demo on GitHub Pages](https://alusilcof5.github.io/library-libris/)
 
 *(You can add screenshots here to showcase the interface.)*
-## Desktop
+### Desktop
 ---
 <img width="1841" height="966" alt="Image" src="https://github.com/user-attachments/assets/8cbb281a-8f95-467d-bcd6-3ce61b7912d4" />
 <img width="1841" height="966" alt="Image" src="https://github.com/user-attachments/assets/69bcfb33-8e5e-4d2f-8fd4-37e30e293680" />
 <img width="1841" height="966" alt="Image" src="https://github.com/user-attachments/assets/1a351170-4fd7-4937-93ef-575dab68e8e9" />
 <img width="1841" height="966" alt="Image" src="https://github.com/user-attachments/assets/62eb0d0a-52b2-44d4-bf38-73fd1c1a7243" />
 
-## Mobile
+### Mobile
 ---
 <img width="204" height="699"  alt="Image" src="https://github.com/user-attachments/assets/1dd57765-aae9-4a2c-b1cb-487257098076" />
 <img width="204" height="699"  alt="Image" src="https://github.com/user-attachments/assets/f5e4fec4-4142-4f0f-9945-2b38076d78fb" />
