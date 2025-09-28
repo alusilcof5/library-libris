@@ -169,6 +169,5 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.searchBtn()?.addEventListener('click', handleSearch);
     elements.searchInput()?.addEventListener('keypress', (e) => e.key === 'Enter' && handleSearch());
 
-    // Cambiar vista inicial a libros de Ciencia
     loadBooks(() => getBooksBySubject('science'), 'science');
 });

@@ -97,7 +97,7 @@ Contributions are welcome!
 
 ## Project Report
 
-You can read the full project report [here](hhttps://noveno-l2.my.canva.site/libris).
+You can read the full project report [here](https://noveno-l2.my.canva.site/libris).
 
 
 ## License
